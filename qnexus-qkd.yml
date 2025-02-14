@@ -1,0 +1,14 @@
+name: qnexus-qkd
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - jupyter
+  - numpy
+  - matplotlib
+  - ipykernel
+  - pip:
+      - qiskit[visualization]
+      - qiskit-aer
+      - qiskit-ibm-runtime
