@@ -1,14 +1,16 @@
-<a href="https://www.cqtech.org/">
-    <img align="middle" src="logos/logo blue+blue.png" width="25%"/>
-</a>
-<a href="https://www.univ-setif.dz/">
-    <img align="right" src="logos/University-Ferhat-Abbas.png" width="25%"/>
-</a>
-
-# Quantum Key Distribution Workshop | CQTraining-2
-## Ferhat Abbas Sétif-1 University, June 2024
+<div style="display: flex; align-items: center; justify-content: space-between;">
+    <!-- First Image (Left) -->
+    <img src="logos/qnexus-logo.png" style="width: 100px;">
+    <img src="logos/logo blue+blue.png" style="width: 350px;">
+    <div style="text-align: center; flex-grow: 1;">
+        <h1 style="margin: 0;">Quantum Key Distribution Workshop</h1>
+        <h2 style="margin: 0; font-weight: normal; color: gray;">CQTraining 3 | QNexus, February 2025</h2>
+    </div>
+    <!-- Second Image (Right) -->
+</div>
+<br>
 <hr>
-Welcome to the second edition of the CQTraining workshop! We are excited to have you join us at the University of Sétif 1 on June 10th, 2024. This workshop is designed to review and deepen your knowledge of Quantum Key Distribution(QKD).
+Welcome to the second edition of the CQTraining workshop! We are excited to have you join us at QNexus on February 15, 16, and 17'th, 2025. This workshop is designed to review and deepen your knowledge of Quantum Key Distribution (QKD).
 
 ## Table of Contents
 - [CQTraining 2: Quantum Key Distribution Workshop](#cqtraining-2-quantum-key-distribution)
@@ -28,8 +30,8 @@ To ensure you have all the necessary tools and packages installed, please follow
 ### Using Conda
 To create the environment with all required dependencies, run:
 ```bash
-conda env create -f cqtr-2.yml
-conda activate cqtr2
+conda env create -f qnexus-qkd.yml
+conda activate qnexus-qkd
 ```
 
 ### Directly from PyPi
@@ -47,9 +49,9 @@ python -c "import qiskit; import qiskit_aer; import qiskit_ibm_runtime; print(qi
 
 You should get an output that ressembles (with potentially slighly different versions):
 ```
-1.1.0
-0.14.2
-0.23.0
+1.3.2
+0.16.1
+0.35.0
 ```
 ## Introduction
 In the BB84 protocol, Alice sends Bob a series of single photons/states through a quantum channel. If Eve measures these photons before they reach Bob, then her measurement can be detected, and Alice and Bob will know that an eavesdropper is spying on them.
