@@ -30,8 +30,8 @@ To ensure you have all the necessary tools and packages installed, please follow
 ### Using Conda
 To create the environment with all required dependencies, run:
 ```bash
-conda env create -f qnexus-qkd.yml
-conda activate qnexus-qkd
+conda env create -f qnexus-qkd.yml --name [env_name]
+conda activate [env_name]
 ```
 
 ### Directly from PyPi
